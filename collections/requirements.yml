@@ -1,3 +1,4 @@
 ---
 collections:
   name: https://github.com/ansible-collections/ibm.spectrum_virtualize
+  type: git
