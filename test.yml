@@ -15,7 +15,7 @@
       register: results
       ibm_svcinfo_command:
         command: "svcinfo lssystem"
-        clustername: 10.0.5.10
+        clustername: "{{host_name}}"
         username: superuser
         password: 90EDbed8
         log_path: /tmp/test.log
