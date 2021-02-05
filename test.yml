@@ -10,5 +10,5 @@
       register: results
       ibm_svcinfo_command:
         command: "svcinfo lssystem"
-        clustername: "{{ clustername }}"
+        clustername: {{inventory_hostname}}
         log_path: /tmp/test.debug
