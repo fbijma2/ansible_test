@@ -4,18 +4,11 @@
     - ibm.spectrum_virtualize
   gather_facts: no
   connection: local
-  hosts: "{{ inventory_hostname }}"
-  vars:
-    - user: username
-    - clustername: "{{ inventory_hostname }}"
-    - username: superuser
-    - password: 90EDbed8
-  tasks:
+  hosts: localhost
+     tasks:
     - name: Run CLI commands
       register: results
       ibm_svcinfo_command:
         command: "svcinfo lssystem"
         clustername: "{{ clustername }}"
-        username: "{{ username }}"
-        password: "{{ password }}"
         log_path: /tmp/test.debug
