@@ -3,7 +3,7 @@
   collections:
     - ibm.spectrum_virtualize
   gather_facts: no
-  connection: local
+#  connection: local
   hosts: localhost
   vars:
     - user: username
@@ -15,7 +15,7 @@
       register: results
       ibm_svcinfo_command:
         command: "svcinfo lssystem"
-#        clustername: "{{ clustername }}"
+        clustername: "{{ clustername }}"
         username: "{{ username }}"
         password: "{{ password }}"
         log_path: /tmp/test.debug
