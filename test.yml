@@ -7,9 +7,9 @@
   hosts: localhost
   vars:
     - user: username
-    - clustername: 10.0.5.10
+    - clustername: "{{ inventory_hostname }}"
     - username: superuser
-    - password: password
+    - password: 90EDbed8
   tasks:
     - name: Run CLI commands
       register: results
