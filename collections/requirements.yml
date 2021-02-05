@@ -1,4 +1,5 @@
 ---
 collections:
 - name: ibm.spectrum_virtualize
+- name: netapp.ontap
   
